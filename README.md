@@ -9,3 +9,4 @@ Credits for images and fonts:
 Background-image: Jerryyaar Designer in https://pixabay.com
 Logo: Cyclone from https://fonts.google.com/icons
 Custom Font: LT Comical from LyonsType in https://www.dafont.com
+Backup Font: Comic Neue from https://fonts.google.com/

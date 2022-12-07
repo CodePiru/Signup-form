@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+@font-face {
+    font-family: 'lt_comicalregular';
+    src: url('./fonts/lt_comical-webfont.woff2') format('woff2'),
+         url('./fonts/lt_comical-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.banner {
+    background-image: url(./images/background-image.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10rem;
+    color: white;
+    min-width: 33%;
+}
+
+h1 {
+    font-family: lt_comicalregular, 'Comic Neue', cursive;
+    letter-spacing: 0.3rem;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.copyright {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.banner a:visited,
+.banner a:link {
+    color: white
+}
+
+.banner a:hover {
+    background-color: rgba(150, 150, 150, 0.5);
+    border-radius: 3px;
+}
