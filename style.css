@@ -8,6 +8,12 @@
     font-style: normal;
 }
 
+:root {
+    --custom-font: lt_comicalregular, 'Comic Neue', cursive;
+    --regular-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --custom-color: #39a6ab;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -30,7 +36,7 @@ body {
 }
 
 h1 {
-    font-family: lt_comicalregular, 'Comic Neue', cursive;
+    font-family: var(--custom-font);
     letter-spacing: 0.3rem;
     font-size: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
@@ -39,6 +45,15 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+}
+
+#logo {
+    height: 5rem;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+    transition: all 1s ease;
 }
 
 .copyright {
@@ -55,3 +70,107 @@ h1 {
     background-color: rgba(150, 150, 150, 0.5);
     border-radius: 3px;
 }
+
+main {
+    padding: 3rem;
+    font-family: var(--regular-font);
+}
+
+h2,
+h3 {
+    font-family: var(--custom-font);
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: var(--custom-color);
+    letter-spacing: 0.2rem;
+}
+
+main p {
+    margin-bottom: 1.5rem;
+    width: 80%;
+}
+
+h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    box-shadow: 1px 1px 2px 2px lightgray;
+    padding: 1rem;
+    width: 90%;
+}
+
+form p {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.form-widget {
+   width: 40%;
+   min-width: 200px;
+}
+
+.form-widget:nth-last-of-type(2) {
+    flex-basis: 100%;
+}
+
+label[for^="user-"] {
+    display: block;
+    font-variant: small-caps;
+    font-family: var(--custom-font);
+}
+
+input[name^="user-"] {
+    width: 90%;
+    height: 1.5rem;
+}
+
+input[type="checkbox"] {
+    accent-color: var(--custom-color);
+}
+
+button {
+    padding: 0.5rem 3rem;
+    background-color: var(--custom-color);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    font-family: var(--custom-font);
+    margin: 1rem 0;
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+p:last-child {
+    margin-top: 2rem;
+}
+
+main a {
+    color: var(--custom-color)
+}
+
+@media (max-width: 800px) {
+
+    .banner {
+        justify-content: space-around;
+    }
+
+    h1,
+    .copyright {
+        transform: rotate(270deg);
+    }
+
+}
+
