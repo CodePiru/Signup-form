@@ -133,6 +133,14 @@ input[type="checkbox"] {
     accent-color: var(--custom-color);
 }
 
+meter {
+    width: 92%;
+}
+
+.error {
+    margin-block-end: 0;
+}
+
 button {
     padding: 0.5rem 3rem;
     background-color: var(--custom-color);
@@ -153,7 +161,7 @@ button:active {
     transform: scale(0.9);
 }
 
-p:last-child {
+main>p:last-child {
     margin-top: 2rem;
 }
 
